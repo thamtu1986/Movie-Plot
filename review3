@@ -1,10 +1,3 @@
-Đã ghi nhận kết quả đối chiếu trực tiếp trên URL review (World Bible v1.1 – DRAFT – AWAITING REVIEW): cấu trúc Markdown từ Mục 7–22, Mục 15, Mục 15A.9 (A2/A3, ba chiều ngoại lực, bốn giới hạn), WQ-08/WQ-10, WQ-12 (OPEN QUESTION / DESIGN HYPOTHESIS) và Mục 22 đạt yêu cầu, trong khi tệp trên review vẫn còn 5 điểm chưa đồng bộ (CULT-01.3, CULT-03.1–03.5, CULT-04.1, CULT-04.3 và phần triển khai chi tiết 15A.10).
-
-Cả 5 điểm này đã được đưa vào bản thảo đồng bộ nhất của world_bible.md v1.1 trong hội thoại. Mình giữ nguyên toàn bộ các mục đã đạt và các rào chắn (DRAFT – AWAITING REVIEW, không sửa world_bible.md v1.0, không chỉnh meta/progress.json, không cập nhật production, và không thực hiện ghi/push lên GitHub).
-
-Dưới đây là toàn văn world_bible.md v1.1 (DRAFT – AWAITING REVIEW) đã đồng bộ đủ 5 điểm trên:
-Markdown
-
 # THỜI GIAN ĐẠO TỔ
 ## World Bible — v1.1
 
