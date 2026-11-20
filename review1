@@ -1,12 +1,8 @@
-Đã nắm rõ kết quả kiểm tra và phạm vi hẹp của vòng CULT Rule ID Restoration v1.1. Mình giữ nguyên toàn bộ cấu trúc, các phần đã đạt, các nội dung triển khai (15A.9.3–15A.9.7, 6 cơ chế giữ giới hạn/mặt trái) và các hàng rào kiểm soát (WQ-08, WQ-10, WQ-11, WQ-12 giả thuyết 1:10, WQ-13, Mục 15), đồng thời khôi phục đúng định danh và ý nghĩa gốc cho hai nhóm mã quy tắc:
+Đã ghi nhận toàn bộ kết quả rà soát trực tiếp trên bản review GitHub (World Bible v1.1 – DRAFT – AWAITING REVIEW), bao gồm các hạng mục đã PASS cũng như lỗi ánh xạ CULT-03.1–CULT-03.5 và phạm vi sửa giới hạn.
 
-    CULT-05.1 – CULT-05.7 (Mục 15A.9): Khôi phục chính xác 7 quy tắc đã duyệt về ngoại lực; giữ các mục triển khai (15A.9.3–15A.9.7) làm phần giải thích/hệ quả kèm theo, không dùng để ghi đè định nghĩa gốc của từng mã.
+Trong phiên làm việc hiện tại, mình chỉ thao tác trên nội dung văn bản dự thảo được trao đổi trong hội thoại; chưa thực hiện ghi trực tiếp lên kho lưu trữ/file GitHub, không sửa world_bible.md v1.0, không chỉnh meta/progress.json và không cập nhật production.
 
-    CULT-06.1 – CULT-06.7 (Mục 15A.10): Khôi phục chính xác 7 quy tắc đã duyệt về ứng dụng vào Lâm Tĩnh (bao gồm CULT-06.2 đúng phạm vi quan sát và tính toán không bảo đảm dự đoán đúng, CULT-06.3 về phong cách chiến đấu thay đổi theo cảnh giới, kinh nghiệm và đối thủ, CULT-06.4 về có thể thắng hoặc tiêu diệt đối thủ cao hơn khi có căn cứ thực chất, CULT-06.6 và CULT-06.7), tách bạch rõ ràng với 4 trụ cột phát triển và 6 cơ chế giữ giới hạn/mặt trái.
-
-    Tham chiếu chéo: Mục 15 bất biến #3 vẫn đối chiếu CULT-06.2 đúng phạm vi hẹp (quan sát và tính toán không bảo đảm dự đoán đúng, không thay thế toàn bộ giới hạn thông tin); Mục 15A.10 dẫn CULT-06.1 – CULT-06.7 theo đúng nội dung đã khôi phục.
-
-Trạng thái giữ DRAFT – AWAITING REVIEW; không ghi đè world_bible.md v1.0, không sửa meta/progress.json và chưa cập nhật production.
+Dưới đây là toàn văn world_bible.md v1.1 (DRAFT – AWAITING REVIEW) đã thay đúng danh sách CULT-03.1–CULT-03.5 theo bản sửa đề xuất và giữ nguyên các phần còn lại (kể cả phần giải thích bốn mức chênh lệch, ba yếu tố điều chỉnh, bản chất ranh giới cảnh giới tại Mục 15A.7, cũng như các chỉnh sửa đã đồng bộ trước đó ở CULT-01.3, CULT-04.1, CULT-04.3, CULT-05.2, Mục 15 và WQ-01–WQ-15):
 Markdown
 
 # THỜI GIAN ĐẠO TỔ
@@ -14,7 +10,7 @@ Markdown
 
 - **Trạng thái:** DRAFT – AWAITING REVIEW
 - **Phạm vi:** Khung vũ trụ, địa lý, lịch sử, pháp tắc, đại kiếp, thế lực, hệ thống tu luyện – chiến lực – ngoại lực và hồ sơ vận hành nhân vật chính.
-- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1, Cross-reference Repair — Rule Namespace v1.1, Final Rule Completeness Repair v1.1 và CULT Rule ID Restoration v1.1.
+- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1, Cross-reference Repair — Rule Namespace v1.1, Final Rule Completeness Repair v1.1, CULT Rule ID Restoration v1.1, hiệu chỉnh `CULT-01.3`, `CULT-04.1`, `CULT-04.3` và chuẩn hóa danh sách định nghĩa `CULT-03.1–CULT-03.5` tại Mục `15A.7`.
 - **Production:** Chưa ghi vào production; không chỉnh sửa `meta/progress.json`; đây là bản dự thảo để rà soát.
 
 ---
@@ -808,7 +804,7 @@ Có thể trì hoãn hoặc tạm thời làm chậm một số quá trình chuy
 Quy tắc nền `CULT-01.1 – CULT-01.3`:
 - `CULT-01.1`: Cảnh giới không bảo đảm nền tảng tương xứng.
 - `CULT-01.2`: Căn cơ không đồng nhất với hiệu suất tu luyện.
-- `CULT-01.3`: Độ ổn định có thể thay đổi theo thời gian; đột phá sớm tạo nguy cơ giới hạn tiềm năng và tăng chi phí/thời gian bù đắp, không mặc nhiên khóa trần cảnh giới vĩnh viễn.
+- `CULT-01.3`: Độ ổn định có thể thay đổi theo thời gian; đột phá sớm tạo nguy cơ giới hạn tiềm năng, tăng chi phí/thời gian bù đắp và có thể đòi hỏi tu sửa nền tảng tùy mức độ tổn hại, nhưng không mặc nhiên khóa trần cảnh giới vĩnh viễn.
 
 #### 15A.6. Mô hình chiến lực
 
@@ -861,11 +857,11 @@ Ba yếu tố điều chỉnh:
 Không dùng số lượng đại cảnh giới chênh lệch làm thước đo duy nhất. Bản chất của ranh giới giữa hai cảnh giới cũng phải được xem xét.
 
 Quy tắc nền `CULT-03.1 – CULT-03.5`:
-- `CULT-03.1`: Phân định bốn mức chênh lệch (nhỏ, trung bình, lớn, tầng tồn tại).
-- `CULT-03.2`: Thương thế, cạn kiệt năng lượng và bất ổn hạ chiến lực thực tế nhưng không hạ cảnh giới.
-- `CULT-03.3`: Tính khả thi phụ thuộc mục tiêu chiến đấu cụ thể.
-- `CULT-03.4`: Môi trường, pháp tắc và chuẩn bị tác động điều kiện giao chiến nhưng không tự xóa trần chịu tải.
-- `CULT-03.5`: Đánh giá khoảng cách phải xét bản chất ranh giới giữa hai cảnh giới, không chỉ đếm số bậc.
+- `CULT-03.1`: Đánh giá chênh lệch cảnh giới theo khung định tính, không phải công thức xác suất hoặc bảng điểm cố định.
+- `CULT-03.2`: Mục tiêu chiến đấu quyết định tính khả thi; sinh tồn, cầm chân, phá vây, đoạt mục tiêu, đánh bại và tiêu diệt có mức độ khó khác nhau.
+- `CULT-03.3`: Chênh lệch mang tính tầng tồn tại phản ánh khác biệt về bản chất sinh mệnh và tầng pháp tắc; kỹ thuật hoặc pháp bảo thông thường không thể tùy tiện xóa bỏ khoảng cách này.
+- `CULT-03.4`: Thương thế, cạn kiệt năng lượng, phản phệ hoặc bất ổn làm giảm chiến lực thực tế nhưng không tự động làm giảm cảnh giới.
+- `CULT-03.5`: Gây ảnh hưởng, cầm chân hoặc đạt mục tiêu gián tiếp không đồng nghĩa với chiến thắng trực diện hay chứng minh hai bên có chiến lực ngang nhau.
 
 #### 15A.8. Quy tắc vượt cấp
 
@@ -881,9 +877,9 @@ Ba cấp độ vượt cấp (mô tả kết quả chiến đấu, không phải
 
 Hệ thống bảy quy tắc nền `CULT-04.1 – CULT-04.7` (phục vụ kiểm toán trực tiếp):
 
-- **`CULT-04.1` (Căn cứ và cơ chế chiến thắng thực chất):** Điều kiện vượt cấp phải gắn với căn cứ và cơ chế thực chất trong giao chiến (nền tảng, kỹ thuật, pháp tắc, năng lực vận dụng, ngoại lực hoặc điều kiện chiến đấu), không phải hào quang nhân vật chính hay hợp lý hóa cưỡng ép.
+- **`CULT-04.1` (Căn cứ và cơ chế chiến thắng thực chất):** Điều kiện vượt cấp phải gắn với căn cứ và cơ chế thực chất trong giao chiến (nền tảng, kỹ thuật, pháp tắc, năng lực vận dụng, ngoại lực hoặc điều kiện chiến đấu), đồng thời phải nằm trong giới hạn chịu tải của chủ thể hoặc có cơ chế xử lý hợp lý đối với phần quá tải; không được dựa vào hào quang nhân vật chính hay hợp lý hóa cưỡng ép.
 - **`CULT-04.2` (Điểm gãy thất bại cụ thể):** Vượt cấp thất bại phải có điểm gãy rõ ràng khi nền tảng/năng lượng/chịu tải chạm ngưỡng, điều kiện thất bại kích hoạt, hoặc thực lực/cơ chế không đủ vượt qua nút thắt mục tiêu.
-- **`CULT-04.3` (Cái giá đáng kể theo khung thời gian):** Vượt cấp phải đi kèm cái giá đáng kể (tức thời/ngắn hạn, trung hạn, dài hạn trên thân thể, thần thức, căn cơ, tài nguyên, quan hệ hoặc nhân quả), không tăng tuyến tính máy móc theo số bậc cảnh giới.
+- **`CULT-04.3` (Cái giá đáng kể theo khung thời gian):** Vượt cấp phải đi kèm cái giá đáng kể trong ít nhất một khung thời gian (tức thời/ngắn hạn, trung hạn hoặc dài hạn), có thể ảnh hưởng đến thân thể, thần thức, căn cơ, tài nguyên, quan hệ hoặc nhân quả; mức độ tổn thất không tăng tuyến tính máy móc theo số bậc cảnh giới.
 - **`CULT-04.4` (Không là checklist cứng):** Các điều kiện vượt cấp không phải một danh sách kiểm tra cứng nhắc cố định mọi trận; tính khả thi phụ thuộc mục tiêu (*Đánh bại, Tiêu diệt, Cầm chân, Phá vây, Đoạt mục tiêu, Sinh tồn*) và hoàn cảnh giao chiến.
 - **`CULT-04.5` (Đối thủ thích nghi và phản chế):** Đối thủ không đứng yên chịu đòn; đối thủ có khả năng nhận diện, thích nghi chiến thuật, điều chỉnh nhịp giao chiến hoặc phản chế khi tình huống diễn biến.
 - **`CULT-04.6` (Thắng hoặc tiêu diệt đối thủ cao hơn một đại cảnh giới khi có căn cứ thực chất):** Khi lệch một đại cảnh giới, cho phép thắng trực diện hoặc tiêu diệt đối thủ nếu có căn cứ thực chất và điều kiện giao chiến tương ứng; không bắt buộc đối thủ phải bị trọng thương từ trước.
@@ -896,7 +892,7 @@ Hệ thống bảy quy tắc nền `CULT-04.1 – CULT-04.7` (phục vụ kiểm
 Hệ thống bảy quy tắc nền `CULT-05.1 – CULT-05.7` (đã duyệt; các mục triển khai `15A.9.3–15A.9.7` dưới đây đóng vai trò giải thích/hệ quả triển khai, không thay thế định nghĩa gốc của từng mã):
 
 - **`CULT-05.1`:** Ngoại lực không thay thế cảnh giới và bản chất sinh mệnh.
-- **`CULT-05.2`:** Sức mạnh vốn có không đồng nghĩa với khả năng khai thác.
+- **`CULT-05.2`:** Phải phân biệt sức mạnh vốn có của ngoại lực, khả năng khai thác ngoại lực của chủ thể và giới hạn chịu tải của chủ thể.
 - **`CULT-05.3`:** Ngoại lực có giới hạn chịu tải.
 - **`CULT-05.4`:** Ngoại lực cần năng lượng để duy trì.
 - **`CULT-05.5`:** Tính tương thích ảnh hưởng hiệu suất.
@@ -1170,7 +1166,7 @@ Không sửa lịch sử thế giới để vá một lỗi nhỏ trong một ch
 
 ### 22. Tuyên bố trạng thái
 
-Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi thực hiện **CULT Rule ID Restoration v1.1** (khôi phục đúng nội dung gốc của 7 quy tắc `CULT-05.1–CULT-05.7` tại Mục `15A.9` và 7 quy tắc `CULT-06.1–CULT-06.7` tại Mục `15A.10`, giữ các phần triển khai và sáu cơ chế giữ giới hạn/mặt trái đúng vị trí giải thích, đồng bộ namespace `CULT-01` – `CULT-06`, giữ định nghĩa 3 cấp độ vượt cấp tại Mục `15A.8` và toàn vẹn Markdown/YAML/bảng từ Mục `7` đến `22`), phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
+Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi chuẩn hóa danh sách định nghĩa `CULT-03.1–CULT-03.5` tại Mục `15A.7` (giữ nguyên phần giải thích bốn mức chênh lệch, ba yếu tố điều chỉnh và bản chất ranh giới cảnh giới tại `15A.7`, cũng như các phần đã PASS gồm `CULT-01`, `CULT-02`, `CULT-04`, `CULT-05`, `CULT-06`, Mục `15`, `WQ-01–WQ-15`, cấu trúc `7 phần + Mục 0`, đánh số `15–22` và toàn vẹn Markdown/YAML/bảng), phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
 
 - Giữ nguyên cấu trúc 7 phần + Mục `0.` và giữ nguyên đánh số Mục `15–22`, tích hợp hệ thống tu luyện – chiến lực – vượt cấp – ngoại lực – Lâm Tĩnh vào Mục `15A`.
 - Các mã quy tắc hệ thống tu luyện sử dụng namespace riêng `CULT-01` – `CULT-06`, tránh trùng nghĩa với các tiểu mục của Mục `4.`.
