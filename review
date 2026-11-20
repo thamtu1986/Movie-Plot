@@ -1,19 +1,6 @@
-Đã nắm rõ hiện trạng từ đối chiếu trực tiếp của bạn trên URL review: bản trên GitHub hiện mang nội dung Revision 1 + cấu trúc 15A, nhưng vẫn còn các lỗi Markdown từ cuối Mục 7 trở đi và giữ mã tham chiếu cũ 4.1.x–4.6.x (đặc biệt ở Mục 15 và 15A.5–15A.10), đồng thời chưa liệt kê rõ ràng 7 quy tắc CULT-04.1–CULT-04.7 dưới dạng có khả năng kiểm toán trực tiếp tại Mục 15A.8.
+Đã ghi nhận kết quả lượt kiểm toán FINAL AUDIT và áp dụng đúng ba chỉnh sửa nhỏ (CULT-01.3, CULT-04.1, CULT-04.3) theo phạm vi chốt, giữ nguyên toàn bộ các phần đã đạt, rào chắn WQ-01–WQ-15, cấu trúc 7 phần + Mục 0, đánh số 15–22, trạng thái DRAFT – AWAITING REVIEW, đồng thời không sửa world_bible.md v1.0, meta/progress.json hay ghi vào production.
 
-Lưu ý: mình không có quyền ghi/push trực tiếp lên repository GitHub của bạn (thamtu1986/Movie-Plot), nên dưới đây là bản world_bible.md v1.1 hoàn chỉnh đã sửa đủ P0 và P1, được dựng sạch để bạn copy/ghi trực tiếp vào tệp review trên GitHub hoặc máy cục bộ trước khi chạy vòng kiểm tra nghiệm thu cuối.
-Điểm đối chiếu đã khóa chặt trong bản này
-
-    Mục 15 — Bất biến #2 & #3: Giữ trạng thái PROPOSED (không gắn SUPPORTED BY APPROVED RULES kiểu ép buộc toàn bộ nguyên tắc; Bất biến #3 giới hạn CULT-06.2 đúng phạm vi hẹp rằng quan sát và tính toán không bảo đảm dự đoán đúng, không thay thế toàn bộ giới hạn thông tin; Bất biến #9 dẫn CULT-05.1–CULT-05.7 và Mục 15A.9).
-
-    Mục 15A.5 – 15A.10: Thay toàn bộ tham chiếu cũ 4.1.x–4.6.x bằng CULT-01.1–CULT-01.3, CULT-02.1–CULT-02.5, CULT-03.1–CULT-03.5, CULT-04.1–CULT-04.7, CULT-05.1–CULT-05.7 và CULT-06.1–CULT-06.7.
-
-    Mục 15A.8: Liệt kê rõ ràng cả 7 quy tắc CULT-04.1 đến CULT-04.7 bao gồm đầy đủ 7 ý kiểm toán (căn cứ & cơ chế chiến thắng thực chất; điểm gãy thất bại cụ thể; cái giá đáng kể theo khung thời gian; không là checklist cứng; đối thủ thích nghi & phản chế; thắng hoặc tiêu diệt đối thủ hơn một đại cảnh giới khi có căn cứ thực chất, không cần trọng thương trước; bản chất ranh giới cảnh giới quan trọng hơn đếm số bậc).
-
-    Toàn vẹn Markdown (Mục 7–22): Khối ```yaml ... ``` tại Mục 7, 16, 17 có hàng rào mở/đóng tách biệt; bảng Mục 18 và 20.5 cùng các tiêu đề/đoạn văn Mục 8–22 tách bạch đúng chuẩn.
-
-    Ranh giới quản trị: Giữ DRAFT – AWAITING REVIEW; không ghi đè world_bible.md v1.0, không sửa meta/progress.json, không cập nhật production, chưa chuyển sang artifact_bible.md.
-
-Bản dự thảo world_bible.md v1.1 (DRAFT – AWAITING REVIEW)
+Dưới đây là toàn văn world_bible.md v1.1 (DRAFT – AWAITING REVIEW) đã cập nhật ba hiệu chỉnh này để kiểm tra chéo tham chiếu và namespace CULT-01–CULT-06:
 Markdown
 
 # THỜI GIAN ĐẠO TỔ
@@ -21,7 +8,7 @@ Markdown
 
 - **Trạng thái:** DRAFT – AWAITING REVIEW
 - **Phạm vi:** Khung vũ trụ, địa lý, lịch sử, pháp tắc, đại kiếp, thế lực, hệ thống tu luyện – chiến lực – ngoại lực và hồ sơ vận hành nhân vật chính.
-- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1 và Cross-reference Repair — Rule Namespace v1.1.
+- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1, Cross-reference Repair — Rule Namespace v1.1, Final Rule Completeness Repair v1.1, CULT Rule ID Restoration v1.1, khôi phục định nghĩa nhóm `CULT-03.1–CULT-03.5` và hiệu chỉnh `CULT-01.3`, `CULT-04.1`, `CULT-04.3`.
 - **Production:** Chưa ghi vào production; không chỉnh sửa `meta/progress.json`; đây là bản dự thảo để rà soát.
 
 ---
@@ -528,7 +515,7 @@ Các quy tắc này là nền tảng liên tục của tài liệu; trạng thá
 
 1. **Khoảng cách có ý nghĩa:** Di chuyển cần thời gian, phương tiện và điều kiện. *(Trạng thái: `PROPOSED`)*
 2. **Tài nguyên có nguồn gốc:** Vật phẩm không tự xuất hiện; khai thác và vận chuyển có chi phí. *(Trạng thái: `PROPOSED` — liên hệ cơ chế tài nguyên tại `15A.3`; không dùng quy tắc ngoại lực về nguồn năng lượng duy trì làm căn cứ chứng minh toàn bộ nguyên tắc này)*
-3. **Thông tin có giới hạn:** Nhân vật chỉ biết điều họ được tiếp cận hoặc có thể suy luận. *(Trạng thái: `PROPOSED` — tham chiếu `CULT-06.2` cho phạm vi hẹp rằng quan sát và tính toán không bảo đảm dự đoán đúng; không dùng làm căn cứ xác lập toàn bộ nguyên tắc thông tin có giới hạn)*
+3. **Thông tin có giới hạn:** Nhân vật chỉ biết điều họ được tiếp cận hoặc có thể suy luận. *(Trạng thái: `PROPOSED` — tham chiếu `CULT-06.2` trong phạm vi hẹp rằng quan sát và tính toán không bảo đảm dự đoán đúng; không dùng làm căn cứ xác lập toàn bộ nguyên tắc thông tin có giới hạn)*
 4. **Quyền lực có cấu trúc:** Tông môn và thế lực cần hậu cần, lợi ích và giới hạn. *(Trạng thái: `PROPOSED`)*
 5. **Thời gian có hậu quả:** Chênh lệch thời gian không xóa mọi hao tổn. *(Trạng thái: `PROPOSED` — liên kết cơ chế hệ quả/nhân quả)*
 6. **Lịch sử có nhiều lớp:** Một nguồn tư liệu không đủ xác nhận toàn bộ sự thật. *(Trạng thái: `PROPOSED`)*
@@ -815,7 +802,7 @@ Có thể trì hoãn hoặc tạm thời làm chậm một số quá trình chuy
 Quy tắc nền `CULT-01.1 – CULT-01.3`:
 - `CULT-01.1`: Cảnh giới không bảo đảm nền tảng tương xứng.
 - `CULT-01.2`: Căn cơ không đồng nhất với hiệu suất tu luyện.
-- `CULT-01.3`: Độ ổn định có thể thay đổi theo thời gian; đột phá sớm tạo nguy cơ giới hạn tiềm năng và tăng chi phí/thời gian bù đắp, không mặc nhiên khóa trần cảnh giới vĩnh viễn.
+- `CULT-01.3`: Độ ổn định có thể thay đổi theo thời gian; đột phá sớm tạo nguy cơ giới hạn tiềm năng, tăng chi phí/thời gian bù đắp và có thể đòi hỏi tu sửa nền tảng tùy mức độ tổn hại, nhưng không mặc nhiên khóa trần cảnh giới vĩnh viễn.
 
 #### 15A.6. Mô hình chiến lực
 
@@ -867,22 +854,30 @@ Ba yếu tố điều chỉnh:
 
 Không dùng số lượng đại cảnh giới chênh lệch làm thước đo duy nhất. Bản chất của ranh giới giữa hai cảnh giới cũng phải được xem xét.
 
-Quy tắc nền `CULT-03.1 – CULT-03.5`:
-- `CULT-03.1`: Phân định bốn mức chênh lệch (nhỏ, trung bình, lớn, tầng tồn tại).
-- `CULT-03.2`: Thương thế, cạn kiệt năng lượng và bất ổn hạ chiến lực thực tế nhưng không hạ cảnh giới.
-- `CULT-03.3`: Tính khả thi phụ thuộc mục tiêu chiến đấu cụ thể.
-- `CULT-03.4`: Môi trường, pháp tắc và chuẩn bị tác động điều kiện giao chiến nhưng không tự xóa trần chịu tải.
-- `CULT-03.5`: Đánh giá khoảng cách phải xét bản chất ranh giới giữa hai cảnh giới, không chỉ đếm số bậc.
+Quy tắc nền `CULT-03.1 – CULT-03.5` (đã duyệt):
+- **`CULT-03.1`:** Khung đánh giá chênh lệch cảnh giới mang tính định tính, không phải công thức tính toán hoặc bảng xác suất cố định.
+- **`CULT-03.2`:** Mục tiêu chiến đấu quyết định tính khả thi; đánh bại, tiêu diệt, cầm chân, phá vây, đoạt mục tiêu và sinh tồn có mức độ khó khác nhau.
+- **`CULT-03.3`:** Chênh lệch mang tính tầng tồn tại, xuất phát từ khác biệt về bản chất sinh mệnh và tầng pháp tắc, không thể bị kỹ thuật hoặc pháp bảo thông thường tùy tiện xóa bỏ.
+- **`CULT-03.4`:** Thương thế, cạn kiệt năng lượng, phản phệ và bất ổn làm suy giảm chiến lực thực tế nhưng không tự động khiến chủ thể mất cảnh giới.
+- **`CULT-03.5`:** Tạo ảnh hưởng, cầm chân hoặc đạt mục tiêu gián tiếp không đồng nghĩa với chiến thắng trực diện hay chứng minh hai bên có chiến lực ngang nhau.
 
 #### 15A.8. Quy tắc vượt cấp
 
 `APPROVED – KIẾN TRÚC`
 
+Ba cấp độ vượt cấp (mô tả kết quả chiến đấu, không phải ba cấp sức mạnh cố định):
+
+| Cấp độ | Nội dung |
+| :--- | :--- |
+| Vượt cấp chiến thuật | Đạt mục tiêu như cầm chân, phá vây, sinh tồn hoặc đoạt mục tiêu mà không nhất thiết đánh bại đối thủ |
+| Vượt cấp thực chiến | Đánh bại hoặc gây thương tổn nghiêm trọng cho đối thủ cảnh giới cao hơn trong giao chiến trực diện |
+| Vượt cấp sinh tử | Tiêu diệt đối thủ cảnh giới cao hơn, tạo ra chiến thắng hoàn chỉnh và bước ngoặt lớn |
+
 Hệ thống bảy quy tắc nền `CULT-04.1 – CULT-04.7` (phục vụ kiểm toán trực tiếp):
 
-- **`CULT-04.1` (Căn cứ và cơ chế chiến thắng thực chất):** Điều kiện vượt cấp phải gắn với căn cứ và cơ chế thực chất trong giao chiến (nền tảng, kỹ thuật, pháp tắc, năng lực vận dụng, ngoại lực hoặc điều kiện chiến đấu), không phải hào quang nhân vật chính hay hợp lý hóa cưỡng ép.
+- **`CULT-04.1` (Căn cứ và cơ chế chiến thắng thực chất):** Điều kiện vượt cấp phải gắn với căn cứ và cơ chế thực chất trong giao chiến (nền tảng, kỹ thuật, pháp tắc, năng lực vận dụng, ngoại lực hoặc điều kiện chiến đấu), đồng thời phải nằm trong giới hạn chịu tải của chủ thể hoặc có cơ chế xử lý hợp lý đối với phần quá tải; không được dựa vào hào quang nhân vật chính hay hợp lý hóa cưỡng ép.
 - **`CULT-04.2` (Điểm gãy thất bại cụ thể):** Vượt cấp thất bại phải có điểm gãy rõ ràng khi nền tảng/năng lượng/chịu tải chạm ngưỡng, điều kiện thất bại kích hoạt, hoặc thực lực/cơ chế không đủ vượt qua nút thắt mục tiêu.
-- **`CULT-04.3` (Cái giá đáng kể theo khung thời gian):** Vượt cấp phải đi kèm cái giá đáng kể (tức thời/ngắn hạn, trung hạn, dài hạn trên thân thể, thần thức, căn cơ, tài nguyên, quan hệ hoặc nhân quả), không tăng tuyến tính máy móc theo số bậc cảnh giới.
+- **`CULT-04.3` (Cái giá đáng kể theo khung thời gian):** Vượt cấp phải đi kèm cái giá đáng kể trong ít nhất một khung thời gian (tức thời/ngắn hạn, trung hạn hoặc dài hạn), có thể ảnh hưởng đến thân thể, thần thức, căn cơ, tài nguyên, quan hệ hoặc nhân quả; mức độ tổn thất không tăng tuyến tính máy móc theo số bậc cảnh giới.
 - **`CULT-04.4` (Không là checklist cứng):** Các điều kiện vượt cấp không phải một danh sách kiểm tra cứng nhắc cố định mọi trận; tính khả thi phụ thuộc mục tiêu (*Đánh bại, Tiêu diệt, Cầm chân, Phá vây, Đoạt mục tiêu, Sinh tồn*) và hoàn cảnh giao chiến.
 - **`CULT-04.5` (Đối thủ thích nghi và phản chế):** Đối thủ không đứng yên chịu đòn; đối thủ có khả năng nhận diện, thích nghi chiến thuật, điều chỉnh nhịp giao chiến hoặc phản chế khi tình huống diễn biến.
 - **`CULT-04.6` (Thắng hoặc tiêu diệt đối thủ cao hơn một đại cảnh giới khi có căn cứ thực chất):** Khi lệch một đại cảnh giới, cho phép thắng trực diện hoặc tiêu diệt đối thủ nếu có căn cứ thực chất và điều kiện giao chiến tương ứng; không bắt buộc đối thủ phải bị trọng thương từ trước.
@@ -891,6 +886,16 @@ Hệ thống bảy quy tắc nền `CULT-04.1 – CULT-04.7` (phục vụ kiểm
 #### 15A.9. Pháp bảo và ngoại lực
 
 `APPROVED – KIẾN TRÚC`
+
+Hệ thống bảy quy tắc nền `CULT-05.1 – CULT-05.7` (đã duyệt; các mục triển khai `15A.9.3–15A.9.7` dưới đây đóng vai trò giải thích/hệ quả triển khai, không thay thế định nghĩa gốc của từng mã):
+
+- **`CULT-05.1`:** Ngoại lực không thay thế cảnh giới và bản chất sinh mệnh.
+- **`CULT-05.2`:** Phải phân biệt sức mạnh vốn có của ngoại lực, khả năng khai thác ngoại lực của chủ thể và giới hạn chịu tải của chủ thể.
+- **`CULT-05.3`:** Ngoại lực có giới hạn chịu tải.
+- **`CULT-05.4`:** Ngoại lực cần năng lượng để duy trì.
+- **`CULT-05.5`:** Tính tương thích ảnh hưởng hiệu suất.
+- **`CULT-05.6`:** Ngoại lực có thể làm thay đổi cục diện chiến đấu.
+- **`CULT-05.7`:** Ngoại vật đặc thù có giới hạn riêng.
 
 ##### 15A.9.1. Nguyên lý
 
@@ -966,13 +971,26 @@ Công năng, nguồn gốc, ý chí và giới hạn đầy đủ thuộc `WQ-13
 
 `APPROVED – KIẾN TRÚC`
 
-Bên cạnh bốn trụ cột phát triển (*Tu luyện, Thực chiến, Vượt cấp, Ngoại lực*) và sáu cơ chế giữ mặt trái/giới hạn (cẩn trọng không đồng nghĩa luôn chọn đúng; căn cơ tốt không đồng nghĩa luôn thuận lợi; không biến thực chiến thành công thức bất bại; cái giá tác động lên *Thân thể, Thần thức, Căn cơ, Tài nguyên, Quan hệ, Nhân quả*; giới hạn đạo đức qua *giới hạn khó vượt qua, vùng xám, mâu thuẫn nội tâm*; và kiểm soát quanh Phá Thiên Chung), cần phân biệt ba tiến trình độc lập:
+Bốn trụ cột phát triển của Lâm Tĩnh: **Tu luyện, Thực chiến, Vượt cấp, Ngoại lực**.
 
-1. **Sự phát triển của Lâm Tĩnh:** Biến đổi sinh mệnh, cảnh giới, nền tảng, căn cơ, chiến lực, nhận thức và trách nhiệm.
-2. **Sự khai mở của Phá Thiên Chung:** Mở khóa từng phần công năng, cơ chế và giới hạn vốn có của ngoại vật.
-3. **Sự phát triển quan hệ và khả năng phối hợp:** Lâm Tĩnh từng bước hiểu, kiểm soát và khai thác Phá Thiên Chung; đồng thời hai bên có thể phát triển phương thức phối hợp mới.
+Sáu cơ chế giữ giới hạn và mặt trái (nguyên tắc triển khai bổ sung, không dùng để tái định nghĩa mã quy tắc):
 
-Ba tiến trình có thể hỗ trợ lẫn nhau nhưng không đồng nhất và không tự động tăng trưởng cùng tốc độ. Phá Thiên Chung khai mở công năng không có nghĩa Lâm Tĩnh lập tức đủ năng lực sử dụng toàn bộ công năng đó; Lâm Tĩnh trưởng thành không có nghĩa mọi giới hạn của Phá Thiên Chung đều được mở khóa; khả năng phối hợp tăng lên không có nghĩa các chi phí, phản phệ và rủi ro biến mất. Quy tắc nền `CULT-06.1 – CULT-06.7`.
+1. Cẩn trọng không đồng nghĩa luôn chọn đúng.
+2. Căn cơ tốt không đồng nghĩa thuận lợi.
+3. Thực chiến không phải công thức bất bại.
+4. Cái giá có hậu quả.
+5. Giới hạn đạo đức tạo xung đột.
+6. Ba tiến trình phát triển của Lâm Tĩnh (sự phát triển của Lâm Tĩnh; sự khai mở của Phá Thiên Chung; sự phát triển quan hệ và khả năng phối hợp) là độc lập, không đồng nhất và không tự động tăng cùng tốc độ.
+
+Hệ thống bảy quy tắc nền `CULT-06.1 – CULT-06.7` (đã duyệt):
+
+- **`CULT-06.1`:** Xây dựng căn cơ theo năng lực và điều kiện, không chạy đua cảnh giới.
+- **`CULT-06.2`:** Quan sát và tính toán không bảo đảm dự đoán đúng.
+- **`CULT-06.3`:** Phong cách chiến đấu thay đổi theo cảnh giới, kinh nghiệm và đối thủ.
+- **`CULT-06.4`:** Có thể thắng hoặc tiêu diệt đối thủ cao hơn khi có căn cứ thực chất theo `CULT-04.1 – CULT-04.7` (tương ứng khung quy tắc vượt cấp 4.4 cũ).
+- **`CULT-06.5`:** Chiến thắng vượt cấp và cưỡng ép sức mạnh phải có hậu quả đáng kể.
+- **`CULT-06.6`:** Phá Thiên Chung mở rộng cơ hội và khả năng tiếp cận pháp tắc, không thay thế sự trưởng thành của Lâm Tĩnh.
+- **`CULT-06.7`:** Sự trưởng thành thể hiện qua năng lực, nhận thức, lựa chọn và trách nhiệm.
 
 ### 16. Hồ sơ chuẩn cho mỗi địa điểm
 
@@ -1146,7 +1164,7 @@ Không sửa lịch sử thế giới để vá một lỗi nhỏ trong một ch
 
 ### 22. Tuyên bố trạng thái
 
-Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi xử lý toàn bộ các mục `P0` và `P1` (namespace `CULT-01` – `CULT-06`, chuẩn hóa Mục `15` bất biến #2, #3, #9, liệt kê rõ 7 quy tắc kiểm toán `CULT-04.1–CULT-04.7` tại Mục `15A.8`, khôi phục toàn bộ định dạng Markdown từ Mục `7` đến `22`), phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
+Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi thực hiện **CULT Rule ID Restoration v1.1**, hiệu chỉnh `CULT-05.2`, khôi phục định nghĩa nhóm `CULT-03.1–CULT-03.5` và bổ sung ba hiệu chỉnh Final Audit (`CULT-01.3`, `CULT-04.1`, `CULT-04.3`), giữ nguyên cấu trúc `7 phần + Mục 0`, đánh số Mục `15–22`, toàn vẹn Markdown/YAML/bảng và các hàng rào `WQ-01–WQ-15`, phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
 
 - Giữ nguyên cấu trúc 7 phần + Mục `0.` và giữ nguyên đánh số Mục `15–22`, tích hợp hệ thống tu luyện – chiến lực – vượt cấp – ngoại lực – Lâm Tĩnh vào Mục `15A`.
 - Các mã quy tắc hệ thống tu luyện sử dụng namespace riêng `CULT-01` – `CULT-06`, tránh trùng nghĩa với các tiểu mục của Mục `4.`.
@@ -1154,5 +1172,3 @@ Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi x�
 - Tài liệu này chưa được ghi vào production; không ghi đè `world_bible.md` v1.0; không chỉnh sửa `meta/progress.json` hoặc bất kỳ trạng thái production nào.
 
 **Trạng thái hiện tại:** `DRAFT – AWAITING REVIEW`
-
-Bản trên đã sẵn sàng để bạn cập nhật vào tệp review và chạy vòng kiểm tra nghiệm thu cuối trước khi quyết định phê duyệt.
