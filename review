@@ -1,6 +1,8 @@
-Đã ghi nhận kết quả lượt kiểm toán FINAL AUDIT và áp dụng đúng ba chỉnh sửa nhỏ (CULT-01.3, CULT-04.1, CULT-04.3) theo phạm vi chốt, giữ nguyên toàn bộ các phần đã đạt, rào chắn WQ-01–WQ-15, cấu trúc 7 phần + Mục 0, đánh số 15–22, trạng thái DRAFT – AWAITING REVIEW, đồng thời không sửa world_bible.md v1.0, meta/progress.json hay ghi vào production.
+Đã ghi nhận kết quả lượt kiểm toán nội dung, namespace và tham chiếu chéo trên bản thảo trong hội thoại, và thay đúng toàn bộ mục 15A.10 (từ tiêu đề #### 15A.10. Ứng dụng vào Lâm Tĩnh đến ngay trước ### 16. Hồ sơ chuẩn cho mỗi địa điểm) bằng bản triển khai đầy đủ bốn trụ cột phát triển và sáu cơ chế giữ giới hạn và mặt trái, giữ nguyên bảy mã CULT-06.1 – CULT-06.7 cũng như tất cả các mục đã PASS khác.
 
-Dưới đây là toàn văn world_bible.md v1.1 (DRAFT – AWAITING REVIEW) đã cập nhật ba hiệu chỉnh này để kiểm tra chéo tham chiếu và namespace CULT-01–CULT-06:
+Trong phiên làm việc hiện tại, thao tác vẫn giới hạn ở bản thảo văn bản trong hội thoại; chưa xác minh hay ghi lên file GitHub, không sửa world_bible.md v1.0, không chỉnh meta/progress.json, không cập nhật production, và giữ nguyên trạng thái DRAFT – AWAITING REVIEW.
+
+Dưới đây là toàn văn world_bible.md v1.1 (DRAFT – AWAITING REVIEW) đã bổ sung đầy đủ phần triển khai 15A.10:
 Markdown
 
 # THỜI GIAN ĐẠO TỔ
@@ -8,7 +10,7 @@ Markdown
 
 - **Trạng thái:** DRAFT – AWAITING REVIEW
 - **Phạm vi:** Khung vũ trụ, địa lý, lịch sử, pháp tắc, đại kiếp, thế lực, hệ thống tu luyện – chiến lực – ngoại lực và hồ sơ vận hành nhân vật chính.
-- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1, Cross-reference Repair — Rule Namespace v1.1, Final Rule Completeness Repair v1.1, CULT Rule ID Restoration v1.1, khôi phục định nghĩa nhóm `CULT-03.1–CULT-03.5` và hiệu chỉnh `CULT-01.3`, `CULT-04.1`, `CULT-04.3`.
+- **Quan hệ tài liệu:** Triển khai từ `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`), đồng bộ từ `world_bible.md` v1.0 qua Bản hiệu chỉnh nội dung v1.1 (Revision 1), Structural Repair — Markdown Integrity v1.1, Cross-reference Repair — Rule Namespace v1.1, Final Rule Completeness Repair v1.1, CULT Rule ID Restoration v1.1, khôi phục định nghĩa nhóm `CULT-03.1–CULT-03.5`, hiệu chỉnh `CULT-01.3`, `CULT-04.1`, `CULT-04.3`, `CULT-05.2` và khôi phục bản triển khai đầy đủ tại Mục `15A.10`.
 - **Production:** Chưa ghi vào production; không chỉnh sửa `meta/progress.json`; đây là bản dự thảo để rà soát.
 
 ---
@@ -854,12 +856,12 @@ Ba yếu tố điều chỉnh:
 
 Không dùng số lượng đại cảnh giới chênh lệch làm thước đo duy nhất. Bản chất của ranh giới giữa hai cảnh giới cũng phải được xem xét.
 
-Quy tắc nền `CULT-03.1 – CULT-03.5` (đã duyệt):
-- **`CULT-03.1`:** Khung đánh giá chênh lệch cảnh giới mang tính định tính, không phải công thức tính toán hoặc bảng xác suất cố định.
-- **`CULT-03.2`:** Mục tiêu chiến đấu quyết định tính khả thi; đánh bại, tiêu diệt, cầm chân, phá vây, đoạt mục tiêu và sinh tồn có mức độ khó khác nhau.
-- **`CULT-03.3`:** Chênh lệch mang tính tầng tồn tại, xuất phát từ khác biệt về bản chất sinh mệnh và tầng pháp tắc, không thể bị kỹ thuật hoặc pháp bảo thông thường tùy tiện xóa bỏ.
-- **`CULT-03.4`:** Thương thế, cạn kiệt năng lượng, phản phệ và bất ổn làm suy giảm chiến lực thực tế nhưng không tự động khiến chủ thể mất cảnh giới.
-- **`CULT-03.5`:** Tạo ảnh hưởng, cầm chân hoặc đạt mục tiêu gián tiếp không đồng nghĩa với chiến thắng trực diện hay chứng minh hai bên có chiến lực ngang nhau.
+Quy tắc nền `CULT-03.1 – CULT-03.5`:
+- `CULT-03.1`: Đánh giá chênh lệch cảnh giới theo khung định tính, không phải công thức xác suất hoặc bảng điểm cố định.
+- `CULT-03.2`: Mục tiêu chiến đấu quyết định tính khả thi; sinh tồn, cầm chân, phá vây, đoạt mục tiêu, đánh bại và tiêu diệt có mức độ khó khác nhau.
+- `CULT-03.3`: Chênh lệch mang tính tầng tồn tại phản ánh khác biệt về bản chất sinh mệnh và tầng pháp tắc; kỹ thuật hoặc pháp bảo thông thường không thể tùy tiện xóa bỏ khoảng cách này.
+- `CULT-03.4`: Thương thế, cạn kiệt năng lượng, phản phệ hoặc bất ổn làm giảm chiến lực thực tế nhưng không tự động làm giảm cảnh giới.
+- `CULT-03.5`: Gây ảnh hưởng, cầm chân hoặc đạt mục tiêu gián tiếp không đồng nghĩa với chiến thắng trực diện hay chứng minh hai bên có chiến lực ngang nhau.
 
 #### 15A.8. Quy tắc vượt cấp
 
@@ -971,23 +973,28 @@ Công năng, nguồn gốc, ý chí và giới hạn đầy đủ thuộc `WQ-13
 
 `APPROVED – KIẾN TRÚC`
 
-Bốn trụ cột phát triển của Lâm Tĩnh: **Tu luyện, Thực chiến, Vượt cấp, Ngoại lực**.
+Bốn trụ cột phát triển của Lâm Tĩnh:
 
-Sáu cơ chế giữ giới hạn và mặt trái (nguyên tắc triển khai bổ sung, không dùng để tái định nghĩa mã quy tắc):
+1. **Tu luyện:** Ưu tiên xây dựng căn cơ, nền tảng và độ ổn định phù hợp với năng lực, điều kiện thực tế. Xuất phát điểm phàm nhân và linh căn không có ưu thế định mệnh khiến con đường của Lâm Tĩnh có thể chậm hơn, nhưng không khóa tiềm năng phát triển.
+2. **Thực chiến:** Lựa chọn mục tiêu cụ thể trước khi giao chiến; khai thác thông tin, địa hình, điều kiện, ưu thế và nút thắt của đối thủ. Phong cách tính toán không loại bỏ khả năng Lâm Tĩnh chiến thắng trực diện bằng thực lực.
+3. **Vượt cấp:** Giai đoạn đầu thiên về vượt cấp chiến thuật; giai đoạn phát triển tiếp theo có thể đạt vượt cấp thực chiến hoặc sinh tử, kể cả đối đầu với người cao hơn một đại cảnh giới khi có căn cứ thực chất; về sau, năng lực vận dụng pháp tắc và hiểu biết về quy luật trở thành ưu thế quan trọng hơn.
+4. **Ngoại lực:** Pháp bảo và Phá Thiên Chung tạo cơ hội, mở rộng phương thức hành động và khả năng tiếp cận pháp tắc, nhưng không thay thế tu luyện, năng lực tự thân hoặc giới hạn chịu tải của Lâm Tĩnh.
 
-1. Cẩn trọng không đồng nghĩa luôn chọn đúng.
-2. Căn cơ tốt không đồng nghĩa thuận lợi.
-3. Thực chiến không phải công thức bất bại.
-4. Cái giá có hậu quả.
-5. Giới hạn đạo đức tạo xung đột.
-6. Ba tiến trình phát triển của Lâm Tĩnh (sự phát triển của Lâm Tĩnh; sự khai mở của Phá Thiên Chung; sự phát triển quan hệ và khả năng phối hợp) là độc lập, không đồng nhất và không tự động tăng cùng tốc độ.
+Sáu cơ chế giữ giới hạn và mặt trái:
 
-Hệ thống bảy quy tắc nền `CULT-06.1 – CULT-06.7` (đã duyệt):
+1. **Cẩn trọng không đồng nghĩa luôn chọn đúng:** Lâm Tĩnh có thể đọc sai tình hình, thiếu thông tin, bỏ sót biến số hoặc bị đối thủ dẫn dụ. Một quyết định hợp lý dựa trên dữ liệu hiện có vẫn có thể dẫn đến kết quả xấu.
+2. **Căn cơ tốt không đồng nghĩa con đường thuận lợi:** Xây dựng nền tảng vững chắc có thể khiến tốc độ tu luyện chậm hơn, làm mất cơ hội hoặc buộc Lâm Tĩnh đánh đổi giữa tài nguyên, thời gian và độ hoàn thiện. Trong một số tình huống, hắn có thể phải chấp nhận đột phá chưa hoàn hảo để sinh tồn hoặc bảo vệ mục tiêu quan trọng.
+3. **Thực chiến không phải công thức bất bại:** Đối thủ có thể giăng bẫy, thay đổi chiến thuật, giả điểm yếu hoặc thích nghi với cách đánh của Lâm Tĩnh. Hắn phải có khả năng thắng bằng thực lực trực diện khi điều kiện cho phép, không phụ thuộc tuyệt đối vào mưu kế hay khắc chế.
+4. **Cái giá có hậu quả:** Tổn thất có thể tác động đến thân thể, thần thức, căn cơ, tài nguyên, quan hệ và nhân quả. Không phải trận chiến nào cũng gây tổn thất ở cả sáu nhóm; tuy nhiên, những chiến thắng lớn hoặc lần cưỡng ép sức mạnh quan trọng phải để lại hậu quả có ý nghĩa.
+5. **Giới hạn đạo đức tạo xung đột:** Cần phân biệt ranh giới mà Lâm Tĩnh rất khó vượt qua, những vùng xám buộc hắn cân nhắc và các xung đột nội tâm khi lợi ích sinh tồn đối lập với lựa chọn đạo đức. Giới hạn này phải tạo ra quyết định và hệ quả thực tế, không chỉ là lời tuyên bố phẩm chất.
+6. **Ba tiến trình phát triển độc lập:** Sự trưởng thành của Lâm Tĩnh, sự khai mở của Phá Thiên Chung và sự phát triển quan hệ cũng như khả năng phối hợp giữa hai bên là ba tiến trình riêng. Chúng không đồng nhất, không tự động tăng cùng tốc độ và có thể hỗ trợ hoặc cản trở lẫn nhau.
+
+Hệ thống bảy quy tắc nền `CULT-06.1 – CULT-06.7`:
 
 - **`CULT-06.1`:** Xây dựng căn cơ theo năng lực và điều kiện, không chạy đua cảnh giới.
 - **`CULT-06.2`:** Quan sát và tính toán không bảo đảm dự đoán đúng.
 - **`CULT-06.3`:** Phong cách chiến đấu thay đổi theo cảnh giới, kinh nghiệm và đối thủ.
-- **`CULT-06.4`:** Có thể thắng hoặc tiêu diệt đối thủ cao hơn khi có căn cứ thực chất theo `CULT-04.1 – CULT-04.7` (tương ứng khung quy tắc vượt cấp 4.4 cũ).
+- **`CULT-06.4`:** Có thể thắng hoặc tiêu diệt đối thủ cao hơn khi có căn cứ thực chất theo `CULT-04.1 – CULT-04.7`.
 - **`CULT-06.5`:** Chiến thắng vượt cấp và cưỡng ép sức mạnh phải có hậu quả đáng kể.
 - **`CULT-06.6`:** Phá Thiên Chung mở rộng cơ hội và khả năng tiếp cận pháp tắc, không thay thế sự trưởng thành của Lâm Tĩnh.
 - **`CULT-06.7`:** Sự trưởng thành thể hiện qua năng lực, nhận thức, lựa chọn và trách nhiệm.
@@ -1164,7 +1171,7 @@ Không sửa lịch sử thế giới để vá một lỗi nhỏ trong một ch
 
 ### 22. Tuyên bố trạng thái
 
-Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi thực hiện **CULT Rule ID Restoration v1.1**, hiệu chỉnh `CULT-05.2`, khôi phục định nghĩa nhóm `CULT-03.1–CULT-03.5` và bổ sung ba hiệu chỉnh Final Audit (`CULT-01.3`, `CULT-04.1`, `CULT-04.3`), giữ nguyên cấu trúc `7 phần + Mục 0`, đánh số Mục `15–22`, toàn vẹn Markdown/YAML/bảng và các hàng rào `WQ-01–WQ-15`, phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
+Tài liệu `world_bible.md` v1.1 là bản dự thảo đồng bộ sau khi thực hiện các hiệu chỉnh `CULT-01.3`, `CULT-04.1`, `CULT-04.3`, `CULT-05.2` và khôi phục bản triển khai đầy đủ tại Mục `15A.10` (giữ nguyên bảy mã `CULT-06.1–06.7`, các phần đã PASS gồm `CULT-01`–`CULT-05`, Mục `15`, `WQ-01–WQ-15` với `WQ-08`/`WQ-10` tách biệt và `WQ-12` giữ là `OPEN QUESTION / DESIGN HYPOTHESIS`, cấu trúc 7 phần + Mục `0` và thứ tự Mục `15–22`), phát triển từ `world_bible.md` v1.0, `premise.md` Reboot v1.1 và hệ thống quy tắc đã duyệt (`APPROVED – KIẾN TRÚC`).
 
 - Giữ nguyên cấu trúc 7 phần + Mục `0.` và giữ nguyên đánh số Mục `15–22`, tích hợp hệ thống tu luyện – chiến lực – vượt cấp – ngoại lực – Lâm Tĩnh vào Mục `15A`.
 - Các mã quy tắc hệ thống tu luyện sử dụng namespace riêng `CULT-01` – `CULT-06`, tránh trùng nghĩa với các tiểu mục của Mục `4.`.
